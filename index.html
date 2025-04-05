@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="eng-ca">
+<!--Note the use of Google Fonts in this exercise (see the below line in my <head> referencing the two fonts I use in the CSS file), Google offers free web fonts and they are *really* easy to implemment, see https://fonts.google.com/ for more info-->
+<head>
+<meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  
+  
+  
+<title>Clarissa Chamberlain Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+/** note I select Pacifico as my body text and Roboto further down the page for my header and link font, I can use these because of the reference in the <head> in the HTML doc **/
+  
+  div {
+    max-width: 1024px;
+  }
+
+  
+body {
+font-family: "Oxygen";
+font-size: 30px;
+background-color: white;
+}
+
+
+/* misc. styling */
+
+ul a {
+color: magenta;
+}
+
+p , h1 , h2 , ul , img {
+margin-left: 0;
+}
+
+img {
+margin-top: 20px;
+display: block;
+}
+
+
+#headline {
+display: block;
+}
+
+
+  
+/* headers */
+
+
+h1 {
+  float: left;
+font-size: 3.25em;
+color: black;
+padding: .375em;
+  position: absolute;
+  top: 1%;
+}
+
+h2 {
+float: left;
+font-size: 1.5em;
+background-color: black;
+color: white;
+display: inline-block;
+padding: .375em;
+margin-top: 0;
+margin-bottom: 0;
+  }
+  
+  
+  h1 , li , h2 {
+font-family: "Roboto", sans-serif;
+}
+
+  
+    
+    @media only screen and (min-width: 601px) {
+      img {
+        width: 800px;
+        height: auto;
+      }
+    
+    p {
+      width: 100%;
+      height: auto;
+    }
+      
+  }
+  
+  .process h3 {
+    text-align: left;
+    position: absolute;
+    left: 2%;
+    top: 57%;
+    font-size: 50px;
+  }
+  
+  .process p {
+    width: 38%;
+    text-align: left;
+    position: absolute;
+    left: 16%;
+    top: 60%;
+    
+
+  }
+  
+  #about p {
+    position: absolute;
+    display: block;
+    text-align: left;
+    width: 13%;
+    top: 60%;
+    left: 2%;
+   font-size: .8em;
+  }
+
+ 
+  #homepage p {
+padding: 1em 1em 1em 20px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  float: right;
+  top: 0.01%;
+    left: 51.5%;
+}
+  
+  .thanks {
+    position: absolute;
+    width: 1024px;
+    text-align: left;
+    left: 3%; 
+    top: 105%;
+  }
+
+  
+  #picture img {
+    position: absolute;
+    width: 575px;
+    right: 4%;
+    top: 42%;
+    z-index: 2;
+    border: 5px black solid;
+  }
+  
+  .circle {
+    position: absolute;
+    display: inline;
+    height: 600px;
+    width: 600px;
+    background-color: #d9b3ff;
+    border-radius: 50%;
+    top: -200px;
+    left: 925px;
+    z-index: -1;
+  }
+  
+  .circle_2 {
+    position: absolute;
+    display: inline;
+    height: 625px;
+    width: 625px;
+    background-color: #b366ff;
+    border-radius: 50%;
+    left: 55px;
+    top: 575px;
+    shape-outside: circle (50% 50%);
+  }
+  
+  .circle_3 {
+    position: absolute;
+    display: inline;
+    height: 330px;
+    width: 330px;
+    background-color: #d9b3ff;
+    border-radius: 50%;
+    left: -50px;
+    top: 500px;
+  }
+  
+  .circle_4 {
+    position: absolute;
+    display: inline;
+    height: 400px;
+    width: 400px;
+    background-color: #d9b3ff;
+    border-radius: 50%;
+    right: 24%;
+    top: 89%;
+    overflow: hidden;
+  }
+  
+  .circle_5 {
+    position: absolute;
+    display: block;
+    height: 900px;
+    width: 900px;
+    background-color: #6600cc;
+    border-radius: 50%;
+    right: -5%;
+    top: 25%;
+    overflow: hidden;
+  }
+  
+  li{
+    list-style-type: none;
+    position: absolute;
+    display: block;
+    top: 40%;
+    padding: 20px;
+    
+  }
+  
+  li a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    border: 3px solid;
+  }
+  
+  li a:hover {
+    background-color: #b366ff;
+    transition-duration: 0.4s;
+     
+  }
+  
+  li a:active {
+    background-color: #d9b3ff;
+  }
+  
+  #project_info p{
+    position: absolute;
+     top: 5px;
+    right: 95px;
+  }
+  
+  #info p {
+    width: 35%;
+    position: absolute;
+   left: 61.5%;
+    top: 85%;
+  }
+  
+</style>
+  
+</head>
+<body>
+  
+  <div id="homepage">
+    
+    <li>
+       <a href="https://silentsoundwave17.github.io/Personal_Website/">Home Page</a>
+       <a href="https://silentsoundwave17.github.io/Personal-Website---Project-1/">Project 1</a>
+       <a href="/">Project 2</a>
+       <a href="/">Project 3</a>
+    </li>
+    
+
+  <div class="circle"> </div>
+    
+    <div class="circle_2"></div>
+    
+    <div class="circle_3"></div>
+      
+    <div class="circle_4"></div>
+      
+      <div class="circle_5"></div>
+   
+  
+  <div>
+    <h2>
+      Project 1
+    </h2>
+    <h1> Jimmy's Feed Co. <br> Mural </h1>
+    <br>
+    
+    
+    <div id="project_info">
+      <p>
+        A locally-run sandwich store in Waterloo comissioned me to design and paint a mural on a wall inside of their store. <br> 
+      </p>
+      
+    </div>
+    
+    <div id="info">
+      <p>
+        The owner, Jimmy Boone, asked for a depiction of well-known celebrities, products, and landmarks from the Kitchener, Waterloo and Cambridge regions. <br>
+        <br>
+      </p>
+     
+    </div>
+   
+    
+  </div>
+  </div>
+  
+  <div id="picture">
+    <div class="mural">
+      <img src="mural.jpg" alt="a mural depicting cartoon versions of various people places and objects with a maple leaf in the center">
+    </div>
+    
+  </div>
+  
+   
+    <div id="steps">
+    <div class="process">
+      <h3>
+        the <br> Process
+      </h3>
+      
+        <p>
+        I first created a digital prototype of the mural before getting approval to transfer the mural to the wall. <br>
+          <br>
+        I then marked off the space, and started sketching the design on the wall 
+          in pencil. <br>
+          <br>
+          After finishing the pencil sketch, I used acrylic paint markers to paint over the lines and add detail. <br>
+          <br>
+          Overall, the mural took 3 months to complete. 
+      </p>
+    </div>
+      </div>
+    
+  
+  
+    <div class="thanks">
+      <h4>
+        I would like to thank the wonderful staff at Jimmy's Feed Co. for this wonderful opportunity, and for all the delicious sandwiches I ate while working there. 
+      </h4>
+  </div>
+  
+</body>
+</html>
